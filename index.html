@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradivo - Early Access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #2563EB;
+            --bg-gray: #F8FAFC;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid #E2E8F0;
+        }
+
+        .logo-container {
+            margin-bottom: 24px;
+        }
+
+        /* Tu logo Tradivo recreado en CSS Puro */
+        .logo-svg {
+            width: 160px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #EFF6FF;
+            color: var(--primary-blue);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 99px;
+            margin-bottom: 20px;
+        }
+
+        .features-box {
+            text-align: left;
+            background: #F8FAFC;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            border: 1px solid #E2E8F0;
+        }
+
+        .features-box h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        li::before {
+            content: "✓";
+            color: var(--primary-blue);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .cta-box {
+            background: #EFF6FF;
+            border: 1px solid #BFDBFE;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .cta-box p {
+            font-size: 13.5px;
+            color: #1E40AF;
+            font-weight: 500;
+            margin-bottom: 14px;
+            line-height: 1.4;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+            margin-bottom: 8px;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1D4ED8;
+        }
+
+        .btn-call {
+            background-color: white;
+            color: var(--primary-blue);
+            border: 1px solid var(--primary-blue);
+        }
+
+        .btn-call:hover {
+            background-color: #F0F5FF;
+        }
+
+        footer {
+            font-size: 11px;
+            color: #94A3B8;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo-container">
+            <svg class="logo-svg" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 25H60M38 25V55C38 60 45 62 50 55" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                <path d="M48 42L54 48L68 34" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="85" y="52" fill="#2563EB" font-family="'Inter', sans-serif" font-size="32" font-weight="700">Tradivo</text>
+            </svg>
+        </div>
+
+        <span class="badge">🇮🇪 Built for Ireland</span>
+        
+        <h1>Simplifying Bookings for Irish Contractors</h1>
+        <p class="subtitle">Our mobile-first platform is currently in early access.</p>
+
+        <div class="features-box">
+            <h3>With Tradivo, you can:</h3>
+            <ul>
+                <li>Create a professional booking page</li>
+                <li>Receive call-out requests easily</li>
+                <li>Manage appointments & schedules</li>
+                <li>Stay connected via WhatsApp</li>
+                <li>Send invoices & track online payments</li>
+                <li>See simple performance insights</li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <p>🏗️ <strong>Want Early Access & a Product Tour?</strong><br>
+            Join our waiting list! Send us a WhatsApp message or give us a call. If we miss you, we'll call you right back.</p>
+            
+            <a href="https://wa.me/353830875007?text=Hi!%20I'm%20interested%20in%20the%20Tradivo%20early%20access." class="btn btn-whatsapp" target="_blank">
+                WhatsApp Us
+            </a>
+            <a href="tel:+353123456789" class="btn btn-call">
+                Call Us
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Tradivo. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
